@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You My Love, Norah Harbat</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff7eb9, #ff758c);
+      color: white;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .message {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto 10px;
+    }
+    .gallery img, .gallery video {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover, .gallery video:hover {
+      transform: scale(1.1);
+    }
+    .back-button {
+      background-color: white;
+      color: #c62828;
+      border: Groove;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #c62828;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Love for You, Mamito 💌</h1>
+    <p class="message">
+      My dearest Norah,<br>
+      You mean the world to me, and I’m so grateful to have you in my life. 
+      Every moment with you is special, and I cherish every memory we’ve made together. 
+      Here’s to many more adventures, laughs, and love-filled days. I love you to the moon and back! 
+      Forever yours, John ❤️
+    </p>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+      </div>
+      
+            <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        
+      </video>
+    </div>
+  </div>
+   <!-- Back Button -->
+   <button class="back-button" onclick="goBack()">Back to the Dove 💖</button>
+  </div>
+
+  <script>
+    // Function to go back to Page 1 with confetti
+    function goBack() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+  
+      // Redirect to Page 1 after a short delay
+      setTimeout(() => {
+        window.location.href = "val.html";
+      }, 1000); // 1-second delay
+    }
+  </script>
+  
+</body>
+</html>
